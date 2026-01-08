@@ -1,126 +1,97 @@
-# PHP MVC Project
-
-A simple **MVC (Model - View - Controller)** architecture built in PHP, developed as a **school project** using XAMPP. This project demonstrates how to structure a PHP application using MVC principles, with support for user management, employee and service handling, and a basic interface.
+Une architecture **MVC (Modèle - Vue - Contrôleur)** en PHP réalisée dans le cadre d’un **projet scolaire** avec XAMPP. Ce projet montre comment structurer une application PHP en MVC, avec gestion des utilisateurs, employés et services, et interface simple.
 
 ---
 
-## ✨ Features
+## ✨ Fonctionnalités
 
-* **Employee management**: add, update, list, and delete employees
-* **Service management**: manage services linked to employees
-* **User management**: registration, login, profile handling
-* **Basic UI**: header, menu, messages, and footer system
-* **Separation of concerns**: clear MVC layers for maintainability
+* Gestion des employés : ajouter, modifier, lister, supprimer
+* Gestion des services : lier des services aux employés
+* Gestion des utilisateurs : inscription, connexion, profil
+* Interface simple : header, menu, messages et footer
+* MVC clair pour faciliter la maintenance
 
 ---
 
-## 📂 Project Structure
+## 📂 Structure du projet
 
 ```
 php-mvc/
-├── BDD/            # Database schema and sample data
-├── config/         # App configuration
-├── controleurs/    # Controllers (Accueil, Employés, Services, Utilisateurs...)
-├── metiers/        # Business classes (Employe, Service, Utilisateur)
-├── modeles/        # Data access layer (models)
-├── vues/           # Views (templates and forms)
-├── public/         # Static resources (CSS, JS, images)
-├── vendor/         # Composer dependencies
-├── index.php       # Application entry point
-├── .env.example    # Example environment configuration
-├── composer.json   # Composer configuration
-└── README.md       # Project documentation
+├── BDD/            # Schéma et données exemples
+├── config/         # Configuration de l’application
+├── controleurs/    # Contrôleurs
+├── metiers/        # Classes métiers
+├── modeles/        # Modèles / accès aux données
+├── vues/           # Templates et formulaires
+├── public/         # Ressources statiques (CSS, JS, images)
+├── vendor/         # Dépendances Composer
+├── index.php       # Point d’entrée
+├── .env.example    # Exemple de configuration
+├── composer.json   # Composer
+└── README.md       # Documentation
 ```
 
 ---
 
-## ⚙️ Requirements
+## ⚙️ Prérequis
 
-* **XAMPP** (Apache, PHP, MySQL)
-* **PHP** ≥ 7.4
-* **Composer** (for dependency management)
-
----
-
-## 🚀 Installation & Setup (with XAMPP)
-
-You have two options to get the code: **clone the repository** or **download the release .zip**.
-
-### Option A: Clone the Repository
-
-1. Open your terminal / Git Bash
-2. Run:
-
-   ```bash
-   git clone https://github.com/leoalmy/Site-Gestion-Personnel-Bootstrap.git
-   ```
-3. Move the project into the XAMPP `htdocs` folder, e.g.:
-
-   ```
-   C:/xampp/htdocs/php-mvc
-   ```
-4. Continue with the common setup steps below.
-
-### Option B: Download Release .zip
-
-1. Go to the [Releases](https://github.com/leoalmy/Site-Gestion-Personnel-Bootstrap/releases) page on GitHub
-2. Download the latest `.zip` release
-3. Extract it into your XAMPP `htdocs` folder, e.g.:
-
-   ```
-   C:/xampp/htdocs/php-mvc
-   ```
-4. Continue with the common setup steps below.
+* XAMPP (Apache, PHP, MySQL)
+* PHP ≥ 7.4
+* Composer
 
 ---
 
-### Common Setup Steps
+## 🚀 Installation
 
-5. **Install dependencies**
+### Cloner le dépôt
 
-   ```bash
-   composer install
-   ```
+```bash
+git clone https://github.com/leoalmy/Site-Gestion-Personnel-Bootstrap.git
+```
 
-6. **Configure environment variables**
+Déplacer le projet dans `C:/xampp/htdocs/php-mvc`
 
-   * Copy `.env.example` to `.env`
+### OU Télécharger le .zip
 
-     ```bash
-     cp .env.example .env
-     ```
-   * Update `.env` with your database credentials
+Télécharger depuis [Releases GitHub](https://github.com/leoalmy/Site-Gestion-Personnel-Bootstrap/releases) et extraire dans `C:/xampp/htdocs/php-mvc`
 
-7. **Database setup**
+### Configuration
 
-   * Start Apache and MySQL in the XAMPP Control Panel
-   * Open [http://localhost/phpmyadmin](http://localhost/phpmyadmin)
-   * Create the required databases
-   * Import the SQL files provided in the **BDD/** folder
+```bash
+composer install
+cp .env.example .env
+```
 
-8. **Run the project**
+Modifier `.env` avec vos identifiants de base de données.
 
-   * Open [http://localhost/php-mvc](http://localhost/php-mvc) in your browser
+### Base de données
 
----
+* Démarrer Apache et MySQL depuis XAMPP
+* Créer les bases dans phpMyAdmin
+* Importer les fichiers SQL du dossier **BDD/**
 
-## 🖥️ Usage
+### Lancer le projet
 
-* Register a new user or log in with existing credentials
-* Manage employees and services through the interface
+Ouvrir [http://localhost/php-mvc](http://localhost/php-mvc)
 
 ---
 
-## 🛠️ Tech Stack
+## 🖥️ Utilisation
 
-* **Backend**: PHP (MVC architecture)
-* **Frontend**: HTML, CSS, basic JavaScript
-* **Database**: MySQL (via XAMPP)
-* **Dependencies**: Composer packages (see `composer.json`)
+* Inscription ou connexion
+* Gestion des employés et services via l’interface
 
 ---
 
-## 🙌 Notes
+## 🛠️ Technologies
 
-* This project was created as part of a **school assignment** to learn and demonstrate MVC in PHP.
-* It is **not intended for production use**.
+* Backend : PHP (MVC)
+* Frontend : HTML, CSS, JavaScript basique
+* Base de données : MySQL
+* Dépendances : Composer
+
+---
+
+## 🙌 Remarques
+
+* Projet réalisé pour **apprentissage scolaire** du MVC
+* **Non destiné à la production**
